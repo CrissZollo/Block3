@@ -54,7 +54,7 @@ function ShowAll()
     {   
         quote.style.display = "none"; 
         personMovie.style.display = "none";
-        newQuoteBtn.style.visibility = "hidden";
+        newQuoteBtn.style.display = "none";
         showAllBtn.innerHTML = "hide all quotes";
         pressed = true;
         for (let i = 0; i < quotesArray.length; i++) 
@@ -84,7 +84,7 @@ function ShowAll()
     {
         quote.style.display = "block"; 
         personMovie.style.display = "block";
-        newQuoteBtn.style.visibility = "visible";
+        newQuoteBtn.style.display = "initial";
         showAllBtn.innerHTML = "show all quotes";
         pressed = false;
         for (let i = 0; i < quotesArray.length + personMoviesArray.length; i++) 
