@@ -12,10 +12,11 @@ let lock = false;
 
 function SendMsg()
 {
-    if (!lock) 
+    let content = messageIn.value;
+    console.log(badWord);
+
+    if (!badWord) 
     {        
-        let content = messageIn.value;
-    
         for (let i = 0; i < content.length; i++) 
         {
             if(content[i] === 'f' || content[i] === 'F')
@@ -41,7 +42,6 @@ function SendMsg()
         else if (badWord) 
         {
             alert("You have been banned and can not send any messages!");
-            lock = true;
         }
         else
         {
@@ -56,12 +56,19 @@ function SendMsg()
             messageIn.value = "";
             
             logItems++;
-            console.log(logItems);
         }
     }
     else
     {
-        alert("You are banned")
+        if (content == "im sorry") 
+        {
+            badWord = false;    
+            sendBtn.style.backgroundColor = "#6cc3d8";
+        }
+        else
+        {
+            alert("You are banned but if you say im sorry you will be unbanned")
+        }
     }
 }
 
