@@ -1,0 +1,23 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    background: rgba(0, 0, 0, 0.5);
+    border: 5px solid darkblue;
+    border-radius: 1rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+h1, h2{
+    text-transform: capitalize;
+    font-size: 6rem; 
+    color: lightblue;
+}
