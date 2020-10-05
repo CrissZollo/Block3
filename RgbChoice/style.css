@@ -1,0 +1,36 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 15px;
+}
+
+.rgb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+.rgb p, .rgb button{
+    background: darkgray;
+    border: 2px black solid;
+    padding: 10px 5px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.setColor{
+    background: orange;
+    border: 2px black solid;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
